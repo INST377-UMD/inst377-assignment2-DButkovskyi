@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-slider@2.3.0/css/simple-slider.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/simple-slider@2.3.0/js/simple-slider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome!</h1>
+    <p id="quote">Loading quote…</p>
+    <button class="btn" onclick="location='stocks.html'">Stocks</button>
+    <button class="btn" onclick="location='dogs.html'">Dogs</button>
+  </main>
+
+  <div id="audio-controls">
+    <p><strong>Audio Commands:</strong>
+      "Hello", "Change color to <color>", "Navigate to <Home|Stocks|Dogs>"
+    </p>
+    <button id="start-audio">Turn On Audio</button>
+    <button id="stop-audio">Turn Off Audio</button>
+  </div>
+
+  <script src="js/nav-audio.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
