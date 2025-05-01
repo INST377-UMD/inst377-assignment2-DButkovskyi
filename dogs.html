@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dogs</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.css"
+  >
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.0/simpleslider.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Random Dog Gallery</h2>
+    <div
+      id="dog-slider"
+      data-simple-slider
+      style="width:100%; height:250px; overflow:hidden;"
+    ></div>
+    <div class="carousel-controls">
+      <button id="prev-btn" class="btn">◀</button>
+      <button id="next-btn" class="btn">▶</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Select a Breed</h2>
+    <div id="breed-info">
+      <p>Click a breed below to see details.</p>
+    </div>
+    <div id="breed-buttons"></div>
+  </section>
+
+  <div id="audio-controls">
+    <p>
+      <strong>Audio Commands:</strong><br>
+      "Hello", "Change color to &lt;color&gt;", "Navigate to &lt;Home|Stocks|Dogs&gt;",<br>
+      "Load Dog Breed &lt;breed name&gt;"
+    </p>
+    <button id="start-audio">Turn On Audio</button>
+    <button id="stop-audio">Turn Off Audio</button>
+  </div>
+
+  <script src="js/nav-audio.js"></script>
+  <script src="js/dogs.js"></script>
+</body>
+</html>

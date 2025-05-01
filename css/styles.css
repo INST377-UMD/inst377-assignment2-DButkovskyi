@@ -1,0 +1,138 @@
+/* navigation */
+nav {
+    background: #333;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav li {
+    margin: 0;
+  }
+  nav a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  nav li:hover {
+    background: #555;
+  }
+  
+  /*  audio box  */
+  #audio-controls {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #f9f9f9;
+  }
+  button {
+    padding: .5rem 1rem;
+    margin-right: .5rem;
+    cursor: pointer;
+  }
+  
+  /*  custom buttons  */
+  .btn {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: .75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+
+
+  main {
+    text-align: center;
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: .5rem;
+    text-align: center;
+  }
+  th {
+    background: #f0f0f0;
+  }
+  #breed-info {
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background: #fafafa;
+  }
+  
+  /* Chart container: full width, fixed height */
+#chart-container {
+    width: 100%;
+    height: 300px; 
+    margin-top: 1rem;
+    position: relative;
+  }
+
+
+
+  /* dogs */
+.slider img {
+    margin: 0 .5rem;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  #breed-info {
+    margin: 1rem 0;
+  }
+  
+  #breed-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: .5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  #breed-buttons .btn {
+    padding: .4rem .8rem;
+    font-size: .875rem;
+    white-space: nowrap;
+  }
+  
+
+#dog-slider[data-simple-slider] {
+  display: flex;           
+  overflow: hidden;        
+  width: 100%;
+  height: 250px;
+}
+#dog-slider img {
+  flex: 0 0 100%;        
+  height: 100%;
+  object-fit: cover;        
+}
+
+.carousel-controls {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.carousel-controls button {
+  margin: 0 0.25rem;
+}
